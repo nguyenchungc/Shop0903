@@ -1,0 +1,25 @@
+
+RewriteEngine on
+
+RewriteRule ^([a-zA-Z0-9-().]+)-([0-9]+)$ detail.php?alias=$1&id=$2
+
+RewriteRule ^([a-zA-Z0-9-]+)/page/([0-9]+)$ type.php?type=$1&page=$2
+RewriteRule ^([a-zA-Z0-9-]+)$ type.php?type=$1
+
+RewriteRule ^([a-zA-Z0-9-().]+)/([0-9]+)$ accept_order.php?token=$1&t=$2
+
+RewriteRule ^index.html$ home.php
+RewriteRule ^about_us.html$ about.php
+RewriteRule ^blog_full_width.html$ blog.php
+RewriteRule ^shop_grid.html$ contact.php
+RewriteRule ^trang-chu$ home.php
+RewriteRule ^account_page.html$ Account.php
+RewriteRule ^Dang-nhap$ Account.php
+
+RewriteRule ^404.apsx$ 404.php
+
+
+ErrorDocument 404 /shop0903/404.php
+ErrorDocument 500 /shop0903/404.php
+
+#comment
