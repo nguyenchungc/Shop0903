@@ -5,7 +5,7 @@
      <div class="about-page">
         <div class="col-xs-12 col-sm-6"> 
           
-          <h1>Welcome to <span class="text_color">MyStore</span></h1>
+          <h1>Chào mừng <span class="text_color"> đến với cửa hàng online </span></h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacus metus, convallis ut leo nec, tincidunt eleifend justo. Ut felis orci, hendrerit a pulvinar et, gravida ac lorem. Sed vitae molestie sapien, at sollicitudin tortor.<br>
             <br>
             Duis id volutpat libero, id vestibulum purus.Donec euismod accumsan felis, <a href="#">egestas lobortis velit tempor</a> vitae. Integer eget velit fermentum, dignissim odio non, bibendum velit.</p>
