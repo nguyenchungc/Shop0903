@@ -7,6 +7,8 @@ class accountController extends Controller {
             return $this->loadView('account');
 
     }
+    
+    
 
 }
 

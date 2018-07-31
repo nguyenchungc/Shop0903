@@ -1,5 +1,8 @@
+
 <?php
 !isset($_SESSION)? session_start(): '';
+    
+
    
 ?>
 <!DOCTYPE html>
@@ -136,11 +139,25 @@
                     <div class="input-group">
                       <select class="cate-dropdown hidden-xs" name="category_id">
                         <option>All Categories</option>
+                        <div class="mega-menu-category">
+                        <option>
                         
-                        <option>women</option>
+                        <?php foreach($menu as $m): ?>
+                        <a href="<?=$m->url1 ?>">
                         
-                      </select>
-                      <input type="text" class="form-control" placeholder="Search" name="search">
+                        <i class="icon fa <?=$m->icon ?> fa-fw"></i> <?=$m->name1 ?> </a>
+                        
+                        <?php endforeach?>
+                        
+                        </option>
+                          
+                        
+
+                        </div>
+                             
+                  
+                      </select>        
+                      <input type="text" class="form-control" placeholder="Search" name="search" method="POST" action="search.php">
                       <button class="btn-search" type="button">
                         <i class="fa fa-search"></i>
                       </button>
@@ -205,16 +222,16 @@
                 <div class="mega-menu-category">
                   <ul class="nav">
                   <?php foreach($menu as $m): ?> <!-- //cu phap if(){..} tuong duong if():... endif// -->
-                  <?php if($m->level2 !=''): ?>
+                    <?php if($m->level2 !=''): ?>
                 
-                    <li>
+                      <li>
                       <a href="<?=$m->url1 ?>">
                         <i class="icon fa <?=$m->icon ?> fa-fw"></i><?=$m->name1 ?> </a>
                       <div class="wrap-popup column1">
                         <div class="popup">
-                          <div class="row">
-                            <div class="col-md-12">
-                              <ul class="nav">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <ul class="nav">
                               <?php 
                                   $arrLevel2 = explode(',', $m->level2);
                                   foreach ($arrLevel2 as $level2):
@@ -226,19 +243,19 @@
                                   </a>
                                 </li>
                                 <?php endforeach ?>
-                              </ul>
-                            </div>
+                            </ul>
                           </div>
+                        </div>
                         </div>
                       </div>
                     </li>
-                  <?php else :?>
+                    <?php else :?>
                     <li class="nosub">
                       <a href="<?=$m->url1?>">
                         <i class="icon fa <?=$m->icon?> fa-fw"></i> <?=$m->name1?></a>
                     </li>
-                    <?php endif?>
-                    <?php endforeach?>
+                  <?php endif?>
+                  <?php endforeach?>
                   </ul>
                 </div>
               </div>

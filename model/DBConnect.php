@@ -40,5 +40,7 @@ class DBConnect{
     function getLastId(){
     return $this->connect->lastinsertId();
     }
+
+
 }
 ?>

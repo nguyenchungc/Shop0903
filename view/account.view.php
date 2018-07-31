@@ -9,7 +9,7 @@
               
    
           
-              <div class="box-authentication">
+              <div class="box-authentication" method="POST" action="register.php">
                 <h4>Đăng nhập</h4>
                <p class="before-login-text">Xin chào, hãy đăng nhập theo tài khoản của bạn</p>
                 <label for="emmail_login">Địa chỉ email<span class="required">*</span></label>
@@ -24,23 +24,14 @@
               <div class="box-authentication">
                 <h4>Đăng ký tài khoản</h4><p>Khởi tạo tài khoản của bạn</p> 											
                 <label for="emmail_register">Địa chỉ email <span class="required">*</span></label>
-                <input id="emmail_register" type="text" class="form-control">
+                <input id="emmail_register" type="text" class="form-control" name="email">
                 <label for="password_register">Mật khẩu<span class="required">*</span></label>
-                <input id="password_register" type="password" class="form-control">
-                <button class="button"><i class="fa fa-user"></i>&nbsp; <span>Đăng ký</span></button>
-                
-                <div class="register-benefits">
-												<h5>Lợi ích việc tạo tài khoản cho riêng bạn :</h5>
-												<ul>
-													<li>Kiểm tra đơn hàng của bạn</li>
-													<li>Xem trạng thái đơn hàng</li>
-													<li>Lưu lại các lần mua sắm của bạn</li>
-												</ul>
-											</div>
+                <input id="password_register" type="password" class="form-control" name="password_1">
+                <label for="password_register">nhập lại mật khẩu<span class="required">*</span></label>
+                <input id="password_register" type="password" class="form-control" name="password_2">
+                <button class="button"><i class="fa fa-user" name ="register"></i>&nbsp; <span>Đăng ký</span></button>
+                <button class="button"><i class="fa fa-lock"></i>&nbsp; <span>Đăng nhập</span></button>
               </div>
-   
-    
-        </div>
       </div>
 
     </div>
