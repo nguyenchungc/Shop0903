@@ -31,7 +31,7 @@
                       <div class="entry-meta-data">
                         <span class="author">
                           <i class="fa fa-user"></i>&nbsp; by:
-                          <a href="#">Admin</a>
+                          <a href="#">Quản trị</a>
                         </span>
                         <span class="cat">
                           <i class="fa fa-folder"></i>&nbsp;
