@@ -140,17 +140,18 @@
                       <select class="cate-dropdown hidden-xs" name="category_id">
                         <option>All Categories</option>
                         <div class="mega-menu-category">
+                        <?php foreach($menu as $m): ?>
                         <option>
                         
-                        <?php foreach($menu as $m): ?>
+                       
                         <a href="<?=$m->url1 ?>">
                         
                         <i class="icon fa <?=$m->icon ?> fa-fw"></i> <?=$m->name1 ?> </a>
                         
-                        <?php endforeach?>
+                        
                         
                         </option>
-                          
+                        <?php endforeach?>
                         
 
                         </div>
